@@ -25,7 +25,9 @@ SECRET_KEY = "django-insecure-73@7ay9f@tuiwe_=dj!0rkihos2%9p+j18022#w7j_rewy+-ow
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['relecloud-mariafpozo-and9dnd0afbvg0hj.francecentral-01.azurewebsites.net']
+ALLOWED_HOSTS = ['relecloud-mariafpozo-and9dnd0afbvg0hj.francecentral-01.azurewebsites.net',
+                 '127.0.0.1'
+                 ]
 
 
 # Para que Django detecte correctamente el host detrás de un proxy
@@ -84,22 +86,7 @@ DATABASES = {
     }
 }
 
-#TEMPLATES:
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-]
+
 
 
 # Password validation
