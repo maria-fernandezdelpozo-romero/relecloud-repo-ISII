@@ -1,6 +1,6 @@
 django
 crispy-bootstrap5
 whitenoise
-psycopg2-bynary
+psycopg2-binary
 django-crispy-forms
 gunicorn
