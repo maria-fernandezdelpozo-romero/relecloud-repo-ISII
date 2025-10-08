@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-73@7ay9f@tuiwe_=dj!0rkihos2%9p+j18022#w7j_rewy+-ow
 DEBUG = False
 
 ALLOWED_HOSTS = ['relecloud-mariafpozo-and9dnd0afbvg0hj.francecentral-01.azurewebsites.net',
-                 '127.0.0.1'
+                 'localhost', '127.0.0.1'
                  ]
 
 
