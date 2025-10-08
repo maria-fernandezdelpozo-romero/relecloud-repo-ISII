@@ -3,3 +3,4 @@ crispy-bootstrap5
 whitenoise
 psycopg2-bynary
 django-crispy-forms
+gunicorn
