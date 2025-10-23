@@ -1,0 +1,13 @@
+# Base de datos SQLite
+*.sqlite3
+db.sqlite3
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Archivos locales
+.env
+*.log
