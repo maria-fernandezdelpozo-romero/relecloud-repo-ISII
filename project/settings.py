@@ -23,7 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-73@7ay9f@tuiwe_=dj!0rkihos2%9p+j18022#w7j_rewy+-ow"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if 'WEBSITE_HOSTNAME' in os.environ:
+    DEBUG = False
+    ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
+else:
+    DEBUG = True
+    ALLOWED_HOSTS = ['127.0.0.1', 
+                     'localhost',
+                     "relecloud-mariafpozo.azurewebsites.net", 
+                      "relecloud-mariafpozo-and9dnd0afbvg0hj.francecentral-01.azurewebsites.net"
+                      ]
 
 ALLOWED_HOSTS = ['relecloud-mariafpozo-and9dnd0afbvg0hj.francecentral-01.azurewebsites.net',
                  'localhost', '127.0.0.1'
